@@ -37,7 +37,7 @@ function initMap() {
 function performSearch() {
     var request = {
         bounds: map.getBounds(),
-        keyword: 'chicken tenders'
+        keyword: 'chicken, tenders, fingers',
     };
     service.radarSearch(request, callback);
 }
