@@ -1,0 +1,26 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans', sans-serif;
+}
+
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.title{
+    text-align: center
+}
