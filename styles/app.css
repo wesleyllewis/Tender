@@ -1,9 +1,14 @@
+/*Color Palette:
+#FFF6EA, #FFD494, #CD994B
+#A4BBD1, #6686A7, #375E86
+*/
 /* =========MOBILE FIRST========= */
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #fff6ea;
 }
 
 ul {
@@ -18,8 +23,8 @@ img {
 
 #map {
   z-index: 1;
-  /* overflow: hidden; */
-  border: solid 3px #e3ac2c;
+  overflow: hidden;
+  border: solid 3px #ffd494;
   height: 380px;
   width: 75%;
   border-radius: 50%;
@@ -32,16 +37,20 @@ img {
 }
 
 .title {
+  color: #375e86;
   /* font-family: 'Bangers', cursive; */
   /* font-family: 'Chewy', cursive; */
   /* font-family: 'Fredoka One', cursive; */
   font-family: 'Fontdiner Swanky', cursive;
   font-size: 3rem;
   text-align: center;
+  text-shadow: 1px 1px 3px #ffd494;
 }
 
 .tagline {
+  color: #375e86;
   text-align: center;
+  text-shadow: 1px 1px 1px #ffd494;
 }
 
 /* =========DESKTOP/TABLET========= */
@@ -49,7 +58,7 @@ img {
   #map {
     z-index: 1;
     overflow: hidden;
-    border: solid 3px #e3ac2c;
+    border: solid 3px #ffd494;
     height: 380px;
     width: 75%;
     border-radius: 30px;
