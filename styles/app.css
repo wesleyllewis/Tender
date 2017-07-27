@@ -1,26 +1,38 @@
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Open Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
 ul {
-  padding-left: 0;
-  list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
 
 img {
-  align-self: center;
-  max-width: 100%;
+    align-self: center;
+    max-width: 100%;
 }
 
 #map {
-  height: 400px;
-  width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    border: solid 3px #E3AC2C;
+    height: 380px;
+    width: 500px;
+    border-radius: 30px;
+    margin: 0 auto;
+    -moz-border-radius: 15px;
+    -webkit-mask-border-radius: 15px;
+    -webkit-border-radius: 15px;
 }
 
-.title{
-    text-align: center
+.title {
+    text-align: center;
 }

@@ -3,7 +3,7 @@ var map, service, infoWindow;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -34.397, lng: 150.644 },
-        zoom: 10,
+        zoom: 13,
         styles: [{
                 stylers: [{ visibilty: "simplified" }]
             },
@@ -25,9 +25,11 @@ function initMap() {
                     lng: position.coords.longitude
                 };
 
-                infoWindow.setPosition(pos);
-                infoWindow.setContent("You Are Here.");
-                infoWindow.open(map);
+                var marker = new google.maps.Marker({
+                    position: pos,
+                    map: map
+                });
+
                 map.setCenter(pos);
             },
             function() {
@@ -42,7 +44,7 @@ function initMap() {
 function performSearch() {
     var request = {
         bounds: map.getBounds(),
-        keyword: "chicken, tenders, fingers"
+        keyword: "chicken AND tenders OR fingers"
     };
     service.radarSearch(request, callback);
 }
