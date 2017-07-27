@@ -65,7 +65,7 @@ function addMarker(place) {
         map: map,
         position: place.geometry.location,
         icon: {
-            url: "../img/chicken-icon.png",
+            url: "./img/chicken-icon.png",
             anchor: new google.maps.Point(10, 10),
             scaledSize: new google.maps.Size(25, 25)
         }
