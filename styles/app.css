@@ -1,7 +1,6 @@
-/*Color Palette:
-#FFF6EA, #FFD494, #CD994B
-#A4BBD1, #6686A7, #375E86
-*/
+.Color_Palette_Demo {
+  color: #fff6ea, #ffd494, #6686a7, #375e86;
+}
 /* =========MOBILE FIRST========= */
 body {
   height: 100%;
@@ -51,6 +50,30 @@ img {
   color: #375e86;
   text-align: center;
   text-shadow: 1px 1px 1px #ffd494;
+}
+
+.btns {
+  margin: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  align-self: center;
+}
+.btns > div {
+  /* display: inline-block; */
+  color: #375e86;
+  border: 1px solid #ffd494;
+  background: #ffd494;
+  box-shadow: 0 0 5px -1px #6686a7;
+  cursor: pointer;
+  vertical-align: middle;
+  max-width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.btns > div:active {
+  color: red;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.6);
 }
 
 /* =========DESKTOP/TABLET========= */
